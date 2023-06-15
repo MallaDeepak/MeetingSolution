@@ -1,0 +1,45 @@
+@import 'src/styles/colors.scss';
+
+.main-container {
+    margin-top: 58px;
+    margin-left: 235px;
+    padding: 15px 15px 56px 15px;
+    position: relative;
+    overflow: visible;
+    display: grid;
+}
+@media screen and (max-width: 992px) {
+    .main-container {
+        margin-left: 60px;
+        min-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-container {
+        margin-left: 60px;
+    }
+}
+
+.version {
+    background-color: $primary_black;
+    color: $color_white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 10px 15px;
+    width: 100%;
+    a {
+        color: $color_white;
+        :hover {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
+    .divider {
+        padding: 0 4px;
+    }
+}

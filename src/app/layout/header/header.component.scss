@@ -1,0 +1,175 @@
+@import 'src/styles/colors.scss';
+
+:host {
+    .navbar {
+        background-color: $primary_black;
+
+        .navbar-brand {
+            color: $color_white;
+            font-size: 16px;
+            padding: 0.6rem 0 0.6rem 0.75rem;
+        }
+
+        .nav-item>a {
+            color: $gray_60;
+
+            &:hover {
+                color: $color_white;
+            }
+        }
+    }
+
+    .messages {
+        width: 300px;
+
+        .media {
+            border-bottom: 1px solid $gray_87;
+            padding: 5px 10px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .media-body {
+            h5 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .small {
+                margin: 0;
+            }
+
+            .last {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.nav-link {
+    i {
+        padding-right: 4px;
+        padding-top: 4px;
+    }
+}
+
+/* =============== White - List Control and Text Box =============== */
+
+.list_top_align {
+    padding-left: 0px;
+}
+
+:host ::ng-deep .mat_custom_header {
+    .mat-sort-header-arrow {
+        color: $color_white !important;
+    }
+
+    .mat-sort-header-container button {
+        outline: none !important;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+        background-color: $color_white !important;
+    }
+
+    .mat-form-field-infix {
+        border-top: 1px solid transparent !important;
+        width: 100% !important;
+    }
+
+    mat-form-field div.mat-form-field-infix mat-select.mat-select div.mat-select-trigger div.mat-select-arrow-wrapper div.mat-select-arrow {
+        color: $color_white !important;
+    }
+
+    mat-form-field div.mat-form-field-wrapper {
+        padding: 0 0 16px 0 !important;
+        margin: 0 12px -14px 12px !important;
+    }
+
+    mat-form-field.mat-focused div.mat-form-field-infix input.mat-input-element {
+        color: $color_white !important;
+        font-size: 16px !important;
+    }
+
+    mat-form-field div.mat-form-field-infix mat-select {
+        font-size: 16px !important;
+        padding: 0.25rem 0;
+    }
+
+    mat-form-field div.mat-form-field-infix span.mat-form-field-label-wrapper label.mat-form-field-label {
+        color: $color_white !important;
+        font-size: 1px !important;
+    }
+
+    mat-form-field.mat-focused div.mat-form-field-infix span.mat-form-field-label-wrapper label.mat-form-field-label {
+        color: $color_white !important;
+        font-size: 1px !important;
+    }
+
+    .mat-select-value-text {
+        color: $color_white !important;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .navbar_nav_align {
+        position: absolute;
+        top: 18px;
+        left: 200px;
+    }
+
+    .navbar_user_align {
+        position: absolute;
+        top: 12px;
+        right: 25px;
+    }
+}
+
+@media (min-width: 762px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+@media (min-width: 762px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+button:focus {
+    border: 0;
+    outline-color: transparent;
+    outline: 0px;
+}
+
+.username_max {
+    max-width: 272px;
+    padding: 0 4px;
+}
+
+.username_wrap {
+    font-size: 16px;
+    display: table-cell;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    white-space: nowrap;
+}
+
+.top_align {
+    color: $color_white !important;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-underline-position: under;
+}
+
+::ng-deep .header_select_panel.mat-select-panel {
+  max-height: 420px !important;
+}
